@@ -1,0 +1,68 @@
+*{ margin:0;
+  padding:0;
+}
+body{
+    display: flex;
+    background-color: black;
+    margin-top: 220px;
+    margin-left: 150px;
+}
+.heart1{
+    background-color: rebeccapurple;
+    padding: 50px;
+    padding-left: 150px;
+    transform: rotate(45deg);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-left: 20px;
+    margin-bottom: -110px;
+    box-shadow: 0px 0px 0px rgb(66, 47, 74);
+
+}
+.heart2{
+    background-color: rebeccapurple;
+    padding: 50px;
+    transform: rotate(135deg);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: -70px;
+    margin-right: -70px;
+    margin-left: 112px;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 0px rgb(66, 47, 74);
+
+}
+.heart{
+    animation: 0.6s liner infinite;
+    position: relative;
+}
+@keyframes heart{
+    8%{
+        transform: scale(1.07);
+    }
+    80%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8%);
+    }
+}
+.text{
+    color: azure;
+    opacity: 0;
+    transition: opacity .2s;
+    margin-top: 180px;
+    margin-left: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-shadow: 4px -4px 5px aliceblue;
+    position: absolute;
+    pointer-events: none;
+}
+
+.container:hover .text{
+    opacity: 1;
+}
+.heart:hover{
+    cursor: grab;
+}
